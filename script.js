@@ -66,13 +66,13 @@ document.addEventListener('DOMContentLoaded', () => {
     lines.forEach(line => {
         const lowerCaseLine = line.toLowerCase();
 
-        if (['admin', '管理号', '管理', '管理员', '管理號'].includes(lowerCaseLine)) {
+        if (['admin', '管理号', 'Admin', '管理', '管理员', '管理號'].includes(lowerCaseLine)) {
             currentCategory = adminName;
             contactIndex = 1;
-        } else if (['navy', '水軍', '小号', '水军', '水軍'].includes(lowerCaseLine)) {
+        } else if (['navy', '水軍', 'Navy', '小号', '水军', '水軍'].includes(lowerCaseLine)) {
             currentCategory = navyName;
             contactIndex = 1;
-        } else if (['anggota', '数据', '客户', '底料', '进群资源'].includes(lowerCaseLine)) {
+        } else if (['anggota', '数据', 'Anggota', '客户', '底料', '进群资源'].includes(lowerCaseLine)) {
             currentCategory = anggotaName;
             contactIndex = 1;
         } else if (line) {
