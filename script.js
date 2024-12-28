@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lines.forEach(line => {
         const lowerCaseLine = line.toLowerCase();
 
-        if (['admin', '管理号', 'Admin', '管理', '管理员', '管理號'].includes(lowerCaseLine)) {
+        if (['admin', 'Admin===', '管理号', 'Admin', '管理', '管理员', '管理號'].includes(lowerCaseLine)) {
             currentCategory = adminName;
             contactIndex = 1;
         } else if (['navy', '水軍', 'Navy', '小号', '水军', '水軍'].includes(lowerCaseLine)) {
